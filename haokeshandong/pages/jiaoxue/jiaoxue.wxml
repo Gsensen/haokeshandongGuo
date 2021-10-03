@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class='customSwiper'>
+<swiper class='banner' autoplay='true' interval='2000' duration='300' bindchange='switchTab'>
+  <block wx:for="{{sliderList}}">
+    <swiper-item>
+      <image style='width:100%;height:100%;' src="{{item.imageSource}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="tab">
+  <block wx:for="{{sliderList}}">
+    <view wx:if="{{item.selected}}" class='tab-item selected'>{{index+1}}</view>
+    <view wx:else class="tab-item">{{index+1}}</view>
+   </block>
+  </view>
+  <view class="flex-row" style="display: flex;flex-direction: row;">
+    
+    <view class="flex-view-item">
+      泰山位于山东省中部，邮政编码：271000，电话区号：0538，绵亘于泰安、济南、淄博三市之间，东西长约200公里，南北宽约50公里。主峰玉皇顶，在泰安市城区北，东经117°6′，北纬36°16′，海拔1545米。
+泰山东望黄海，西襟黄河，前瞻孔孟故里，背依泉城济南，以拔地通天之势雄峙于中国东方，以五岳独尊的盛名称誉古今，可视为中华民族的精神象征，华夏历史文化的缩影。1982年，被国务院列为第一批国家重点风景名胜区；1987年，被联合国教科文组织列为世界遗产，是融自然与文化遗产为一体的世界名山。
+    </view>
+    <view class="taishan">
+      五岳之首 泰山
+    </view>
+    <view class="flex-view-item">
+      泰山的风景名胜以主峰为中心，呈放射形分布，历经几千年的保护与建设，已成为中国山岳风景的代表：自然景观与人文景观融为一体。泰山拔起于齐鲁丘陵之上，主峰突兀，山势险峻，峰峦层叠，形成“一览众山小”和“群峰拱岱”的高旷气势。泰山多松柏，更显其庄严、巍峨、葱郁；又多溪泉，故而不乏灵秀与缠绵。缥缈变幻的云雾则使它平添了几分神秘与深奥。它既有秀丽的麓区、静谧的幽区、开阔的旷区，又有虚幻的妙区、深邃的奥区；还有旭日东升、云海玉盘、晚霞夕照、黄河金带等十大自然奇观及石坞松涛、对松绝奇、桃园精舍、灵岩胜景等十大自然景观，宛若一幅天然的山水画卷；人文景观，其布局重点从泰城西南祭地的社首山、蒿里山至告天的玉皇顶，形成“地府”、“人间”、“天堂”三重空间。岱庙是山下泰城中轴线上的主体建筑，前连通天街，后接盘道，形成山城一体。由此步步登高，渐入佳境，而由“人间”进入“天庭仙界”。
+    </view>
+    
+
+  </view>
+</view>
+
+
